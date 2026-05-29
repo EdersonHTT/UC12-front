@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body { 
+    box-sizing: border-box;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.conteiner {
+    box-sizing: border-box;
+    background-color: rgb(195, 231, 255);
+    padding: 20px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.conteiner-filho {
+    background-color: rgb(255, 255, 255);
+    height: 63%;
+    width: 20%;
+    border-radius: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.473));
+    overflow: hidden;
+}
+
+.conteiner-filho div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    flex-grow: 1;
+}
+
+.conteiner-filho img {
+    width: 100%;
+    height: 200px;
+    background-color: beige;
+    
+}
+
+.conteiner-filho h3 {
+    font-size: 30px;
+}
+
+.conteiner-filho p {
+    font-size: 20px;
+    text-align: justify;
+    padding: 0 17px;
+    flex-grow: 1;
+    margin-top: 10px;
+}
+
+.conteiner-filho button {
+    font-size: 20px;
+    background-color: rgb(0, 162, 255);
+    color: white;
+    font-weight: bold;
+    padding: 8px;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.conteiner-filho button:hover {
+    background-color: rgba(0, 162, 255, 0.685);
+    filter: drop-shadow(0 0 5px rgb(0, 162, 255));
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+    padding: 10px;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: white
+}
+
+nav {
+    display: flex;
+    gap: 10px
+}
+
+.search {
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+}

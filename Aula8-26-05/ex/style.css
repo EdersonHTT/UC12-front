@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Lsd;
+    src: url(./assets/fonts/LSD.TTF);
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: rgb(71, 71, 71);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteiner {
+    background-color: #EFD8F4;
+    width: 500px;
+    height: auto;
+    padding: 20px;
+    border-radius: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+p {
+    background-color: #999A9F;
+    font-size: 100px;
+    width: 100%;
+    height: 120px;
+    padding: 15px;
+    border-radius: 2rem;
+    box-shadow: inset 0 0 5px #202020;
+    font-family: Lsd;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    position: relative;
+}
+
+span {
+    position: absolute;
+    font-size: 40px;
+    top: 7px;
+    right: 26px;
+}
+
+.conteiner div {
+    border-radius: 3rem;
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px;
+    gap: 10px;
+    align-items: center;
+    justify-items: center;
+    box-shadow: inset 0 0 10px #E7B2CE;
+}
+
+.screen {
+    display: flex!important;
+
+}
+
+button {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: none;
+    cursor: pointer;
+    font-size: 40px;
+    color: grey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transform: translateY(-120px);
+    transform: translateX(-6px);
+}
+
+button:active {
+    filter: none;
+    margin: none;
+    transform: translateY(0);
+    transform: translateX(0);
+}
+
+.beige {
+    background-color: #F7D5E3;
+    filter: drop-shadow(3px 6px 0 #C98A83);
+    grid-row: 1/2; 
+}
+
+.yellow {
+    background-color: #FFF8CE;
+    filter: drop-shadow(3px 6px 0 #C98A83);
+    grid-row: 2/3; 
+}
+
+.green {
+    background-color: #D7F2D2;
+    filter: drop-shadow(3px 6px 0 #95A984);
+    grid-row: 3/4; 
+}
+
+.purple {
+    background-color: #CEB0D6;
+    filter: drop-shadow(3px 6px 0 #9175AE);
+    grid-row: 4/5; 
+}
+
+.blue {
+    background-color: #B2E0F7;
+    filter: drop-shadow(3px 6px 0 #6585AA);
+    grid-row: 5/6; 
+}
+
+.orange {
+    background-color: #FB5E2B;
+    filter: drop-shadow(3px 6px 0 #D82200);
+    grid-row: 1/2; 
+}
