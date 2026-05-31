@@ -1,3 +1,9 @@
+:root {
+    --theme: "light";
+    --btn: none;
+
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,17 +15,18 @@
 }
 
 body {
-    min-height: 100vh;
+    height: 100vh;
     min-width: 100vw;
-    background-color: rgb(71, 71, 71);
+    background-color: #b4a3b8;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
 }
 
 .conteiner {
     background-color: #EFD8F4;
-    width: 500px;
+    width: 510px;
     height: auto;
     padding: 20px;
     border-radius: 4rem;
@@ -28,11 +35,11 @@ body {
     gap: 10px;
 }
 
-p {
+.calc {
     background-color: #999A9F;
-    font-size: 100px;
+    font-size: 120px;
     width: 100%;
-    height: 120px;
+    height: 160px;
     padding: 15px;
     border-radius: 2rem;
     box-shadow: inset 0 0 5px #202020;
@@ -40,14 +47,15 @@ p {
     display: flex;
     justify-content: end;
     align-items: end;
-    position: relative;
+    overflow: hidden;
 }
 
-span {
+.sub {
     position: absolute;
-    font-size: 40px;
-    top: 7px;
-    right: 26px;
+    font-size: 55px;
+    top: 30px;
+    font-family: Lsd;
+    right: 38px;
 }
 
 .conteiner div {
@@ -56,7 +64,7 @@ span {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 20px;
-    gap: 10px;
+    gap: 5px;
     align-items: center;
     justify-items: center;
     box-shadow: inset 0 0 10px #E7B2CE;
@@ -64,31 +72,42 @@ span {
 
 .screen {
     display: flex!important;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
 
+#alert {
+    color: rgb(255, 121, 121);
+    position: absolute;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 70px;
+    display: none;
 }
 
 button {
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    height: 110px;
     border: none;
     cursor: pointer;
     font-size: 40px;
     color: grey;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    transform: translateY(-120px);
     transform: translateX(-6px);
+    transform: translatey(-6px);
+    box-shadow: inset 0 0 5px #202020;
 }
 
 button:active {
     filter: none;
     margin: none;
-    transform: translateY(0);
-    transform: translateX(0);
+    transform: translatey(0);
+    transform: translateX(3px);
 }
 
 .beige {
-    background-color: #F7D5E3;
+    background-color: #f8cadd;
     filter: drop-shadow(3px 6px 0 #C98A83);
     grid-row: 1/2; 
 }
@@ -122,3 +141,14 @@ button:active {
     filter: drop-shadow(3px 6px 0 #D82200);
     grid-row: 1/2; 
 }
+
+#doom {
+    position: absolute;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100%;
+    border-radius: 3rem;
+    border: 0;
+}
+
