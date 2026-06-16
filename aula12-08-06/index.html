@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    
+    <div id="tela-inicio" class="tela ativa">
+        <div class="card-inicio">
+
+            <div class="emoji-titulo">🥵</div>
+
+            <h1>Quiz Waifu </h1>
+
+            <p>Teste seus conhecimentos sobre as Maiores Waifu da história!!!</p>
+
+            <div class="info-quiz">
+                <span><i class="fas fa-question-circle"></i> 10 perguntas</span>
+                <span><i class="fas fa-clock"></i> ~5 minutos</span>
+                <span><i class="fas fa-star"></i> 10 pintos cada</span>
+            </div>
+
+            <button id="btn-comecar" class="btn-primario">
+                <i class="fas fa-play"></i> Começar Brincadeiras
+            </button>
+        </div>
+    </div>
+
+    <div id="tela-quiz" class="tela ">
+        <div class="quiz-container">
+            <header class="quiz-header">
+                <div class="progresso-info">
+                    <span id="numero-pergunta"> Pergunta 1 de 10</span>
+                    <span id="placar-atual"><i class="fas fa-star"></i> 0 pts</span>
+                </div>
+
+                <div class="barra-progresso">
+
+                    <div id="barra-fill" class="barra-fill"></div>
+
+                </div>
+            </header>
+
+            <main class="quiz-main">
+                <div class="pergunta-card">
+                    <p id="categoria-badge" class="categoria-badge">Waifu</p>
+                    <h2 id="texto-pergunta"> Texto da Pergunta</h2>
+                </div>
+
+                <div id="opcoes-container" class="opcoes-container">
+                    <!-- Opções geradas com o js -->
+                </div>
+                
+                <div id="feedback" class="feedback escondido">
+                    <div id="feedback-icone"></div>
+                    <p id="feedback-texto"></p>
+                </div>
+            </main>
+
+            <footer class="quiz-footer">
+                <button id="btn-proxima" class="btn-primario escondido">
+                    Próxima 
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </footer>
+        </div>
+    </div>
+
+    <div id="tela-resultado" class="tela">
+      <div class="resultado-container">
+
+        <div id="resultado-emoji" class="resultado-emoji"></div>
+
+        <h2 id="resultado-titulo"></h2>
+        
+        <p id="resultado-descricao"></p>
+
+        <div class="placar-final">
+          <div class="placar-item">
+            <span class="placar-numero" id="acertos-numero">0</span>
+            <span class="placar-label">Acertos</span>
+          </div>
+          <div class="placar-divisor"></div>
+          <div class="placar-item">
+            <span class="placar-numero" id="pontos-numero">0</span>
+            <span class="placar-label">Pontos</span>
+          </div>
+          <div class="placar-divisor"></div>
+          <div class="placar-item">
+            <span class="placar-numero" id="erros-numero">0</span>
+            <span class="placar-label">Erros</span>
+          </div>
+        </div>
+
+        <div id="revisao-container" class="revisao-container">
+          <h3><i class="fas fa-list-check"></i> Revisão das respostas</h3>
+          <div id="revisao-lista"></div>
+        </div>
+
+        <button id="btn-reiniciar" class="btn-primario">
+          <i class="fas fa-rotate-left"></i> Jogar Novamente
+        </button>
+      </div>
+    </div>
+
+    <script src="./scripts/script.js"></script>
+</body>
+</html>

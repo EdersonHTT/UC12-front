@@ -1,0 +1,65 @@
+
+
+/* .texto {
+    color: brown;
+    font-size: 40px;
+}
+
+.esconder {
+    display: none;
+} */
+
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(61, 76, 90);
+    padding: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+img {
+    color: white;
+    width: 40px;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+}
+
+.hiddem {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .desck {
+        display: none;
+    }
+
+    .hiddem {
+        display: block;
+    }
+
+    .moba {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        background-color: black;
+        position: absolute;
+        right: 40px;
+        top: 50px;
+        border-radius: 1rem 0 1rem 1rem;
+    }
+}
