@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogo da memoria</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 <body>
     <main>
@@ -14,7 +15,7 @@
 
             <div class="info">
                 <div class="item">
-                    <div class="bol attempts">0</div>
+                    <div class="bol" id="attempts">0</div>
                     Tentativas
                 </div>
 
@@ -32,6 +33,12 @@
                     Encontradas
                 </div>
             </div>
+
+            <button class="btnTheme">
+                <i class="fa-solid fa-sun sun"></i>
+                <i class="fa-solid fa-moon moon"></i>
+                <div></div>
+            </button>
         </article>
         <a href="index.html" class="btn">Reiniciar</a>
 

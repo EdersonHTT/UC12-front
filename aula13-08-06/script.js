@@ -10,12 +10,8 @@ const images = [
 
 const verso = "./assets/cover.png";
 
-let firstCard = null;
-let secindCard = null;
-let blocked = false;
-
-let miss = 0;
-let acertos = 0;
+let attemptsNu = 0;
+let wins = 0;
 
 const tableGame = document.getElementById("tableGame");
 const btnReset = document.getElementById("reset");
@@ -24,6 +20,8 @@ const attempts = document.getElementById("attempts");
 const plays = document.querySelectorAll(".nu");
 
 let cards;
+const selected = [];
+let blocked = false;
 
 
 // Fisher-yates
@@ -54,7 +52,8 @@ function startGame() {
     arr.forEach(e => {
         const card = document.createElement("img");
         card.classList.add("card");
-        card.value = "aaaaa"
+        card.src = verso;
+        card.value = e;
 
         tableGame.appendChild(card);
     });
@@ -63,11 +62,30 @@ function startGame() {
 }
 
 function flipCard(card) {
-    
+    card.src = card.value;
 }
 
 function checkPair() {
+    if(selected[0].src != selected[1].src) {
 
+        selected[0].src = verso;
+        selected[1].src = verso;
+
+        attemptsNu++
+        attempts.textContent = attemptsNu;
+        selected.pop();
+        selected.pop();
+        blocked = false;
+        return
+    }
+
+    attemptsNu++;
+    attempts.textContent = attemptsNu;
+    wins++
+    plays[0].textContent = wins;
+    selected.pop();
+    selected.pop();
+    blocked = false;
 }
 
 startGame();
@@ -75,7 +93,16 @@ startGame();
 cards.forEach(e => {
 
     e.addEventListener("click", () => {
-        
+        if(blocked) return;
+
+        selected.push(e)
+        flipCard(e)
+
+        if(selected.length == 2) {
+            blocked = true;
+            setTimeout(() => checkPair(), 1000);
+            
+        }
     })
 
 })
