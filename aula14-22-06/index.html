@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+    <a href="#" class="header__logo">MeuSite</a>
+
+    <nav class="header__nav">
+      <a href="#">Início</a>
+      <a href="#">Sobre</a>
+      <a href="#">Contato</a>
+    </nav>
+
+    <button
+      class="theme-toggle"
+      id="theme-toggle"
+      type="button"
+    >
+      Tema escuro
+    </button>
+  </header>
+
+  <main class="main">
+
+    <section class="card">
+      <span class="card__tag">Exercício 1.3</span>
+
+      <h2 class="card__title">
+        Sistema de Espaçamento
+      </h2>
+
+      <p class="card__body">
+        Este formulário utiliza apenas variáveis CSS de espaçamento.
+      </p>
+
+      <div class="form-group">
+        <label for="nome">
+          Nome
+        </label>
+
+        <input
+          type="text"
+          id="nome"
+          class="input"
+          placeholder="Digite seu nome"
+        >
+      </div>
+
+      <div class="card__footer">
+        <button
+          type="button"
+          class="btn btn--primary"
+        >
+          Enviar
+        </button>
+      </div>
+    </section>
+
+    <section class="card">
+      <span class="card__tag">Exercício 1.5</span>
+
+      <h2 class="card__title">
+        Paleta HSL Dinâmica
+      </h2>
+
+      <p class="card__body">
+        Arraste o controle para alterar a cor da paleta.
+      </p>
+
+      <input
+        type="range"
+        min="0"
+        max="360"
+        value="220"
+        id="hue-range"
+      >
+
+      <div class="palette">
+        <div class="palette__color palette__100">
+          100
+        </div>
+
+        <div class="palette__color palette__300">
+          300
+        </div>
+
+        <div class="palette__color palette__500">
+          500
+        </div>
+
+        <div class="palette__color palette__700">
+          700
+        </div>
+
+        <div class="palette__color palette__900">
+          900
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,7 +1,8 @@
 :root {
-    --color-prymari: #20144d;
+    --color-primary: #4d2fb8;
+    --color-secundary: #5c41be;
 
-    background: linear-gradient(to bottom right, #120e20 30%, var(--color-prymari) 100%);
+    background: linear-gradient(to bottom right, var(--color-secundary) 30%, var(--color-primary) 100%);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -69,7 +70,7 @@ p {
     width: 0;
     height: 0;
     padding: 25px;
-    background-color: var(--color-prymari);
+    background-color: var(--color-primary);
     border-radius: 50%;
     box-sizing: border-box;
     color: white;
@@ -100,6 +101,7 @@ p {
     cursor: pointer;
     display: flex;
     align-items: center;
+    transition: all 0.3s ease-in-out
 }
 
 .btnTheme div {
@@ -123,6 +125,10 @@ p {
 .sun {
     left: 4.5px;
     top: 6.5px;
+}
+
+.btnTheme.btnDark {
+    justify-content: flex-end;
 }
 
 
@@ -154,7 +160,7 @@ section {
     border: none;
     padding: 5px 10px ;
     color: white;
-    background-color: var(--color-prymari);
+    background-color: var(--color-primary);
     cursor: pointer;
     position: relative;
     text-decoration: none;
