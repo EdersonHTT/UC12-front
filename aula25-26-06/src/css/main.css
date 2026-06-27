@@ -1,0 +1,16 @@
+/* main.css */
+/* Este arquivo não contém CSS próprio — só importa os outros na ordem certa */
+
+/* 1. Fundação: reset, variáveis, tipografia global */
+@import url('base.css');
+
+/* 2. Estrutura: container, header, main, footer, grids */
+@import url('layout.css');
+
+/* 3. Componentes: um @import por arquivo */
+@import url('components/nav.css');
+@import url('components/button.css');
+@import url('components/card.css');
+
+/* 4. Utilitários: sempre por último */
+@import url('utils.css');

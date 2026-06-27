@@ -1,0 +1,18 @@
+/* utils.css */
+
+/* Espaçamentos */
+.mt-auto { margin-top: auto; }
+.mb-0    { margin-bottom: 0; }
+
+/* Alinhamento */
+.text-center { text-align: center; }
+.text-right  { text-align: right; }
+
+/* Visibilidade */
+.hidden  { display: none; }
+
+/* Flexbox */
+.flex        { display: flex; }
+.flex-center { display: flex; align-items: center; justify-content: center; }
+.gap-sm      { gap: var(--spacing-sm); }
+.gap-md      { gap: var(--spacing-md); }

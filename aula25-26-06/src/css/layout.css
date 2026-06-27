@@ -1,0 +1,40 @@
+/* layout.css */
+
+/* Container centralizado — reutilizado em toda a página */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+/* Cabeçalho */
+.site-header {
+  background: var(--color-primary);
+  padding: var(--spacing-md) 0;
+}
+
+/* Conteúdo principal */
+.site-main {
+  min-height: 60vh;
+  padding: var(--spacing-lg) 0;
+}
+
+/* Rodapé */
+.site-footer {
+  background: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+  padding: var(--spacing-lg) 0;
+}
+
+/* Grids reutilizáveis */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-md);
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-md);
+}
